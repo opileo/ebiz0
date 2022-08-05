@@ -6,11 +6,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>This app</title>
+		<title>This APP</title>
+		
+		<!-- bootstrap link-->
 		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
 	</head>
 	<body>
-		<h1>Customer d details huuuuu</h1>
+		<h1>Customer d details</h1>
 		<div class="container">
 			<% 
 			
@@ -19,8 +21,8 @@
 				ResultSet rs = dbutil.getData(sql);
 				while(rs.next()){
 			%>
-				<h1 class="text-dark"> Memeber name <%=rs.getString("name") %></h1>
-				<h1 class="text-light"> Memeber gender <%=rs.getString("gender") %></h1>		
+				<h1 class="text-dark"> User name <%=rs.getString("name") %></h1>
+				<h1 class="text-light"> User gender <%=rs.getString("gender") %></h1>		
 			<%
 				}
 				dbutil.closeConnections();
